@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Product Discovery Hub</title>
+    <meta name="description" content="Discover the best deals across multiple platforms with AI-powered product analysis and price comparison">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>AI Product Discovery Hub</h2>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#products" class="nav-link">Products</a>
+                    <a href="#deals" class="nav-link">Deals</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Discover Amazing Products</h1>
+                <p>Find the best deals and compare prices across multiple retailers</p>
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Search for products...">
+                    <button id="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="filters">
+            <div class="filter-container">
+                <h3>Filter Products</h3>
+                <div class="filter-grid">
+                    <select id="category-filter">
+                        <option value="">All Categories</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="fashion">Fashion</option>
+                        <option value="home">Home & Garden</option>
+                        <option value="sports">Sports</option>
+                        <option value="books">Books</option>
+                    </select>
+                    <select id="price-filter">
+                        <option value="">All Prices</option>
+                        <option value="0-25">$0 - $25</option>
+                        <option value="25-50">$25 - $50</option>
+                        <option value="50-100">$50 - $100</option>
+                        <option value="100+">$100+</option>
+                    </select>
+                    <select id="rating-filter">
+                        <option value="">All Ratings</option>
+                        <option value="4+">4+ Stars</option>
+                        <option value="3+">3+ Stars</option>
+                        <option value="2+">2+ Stars</option>
+                    </select>
+                    <button id="clear-filters">Clear All</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="products">
+            <div class="container">
+                <h2>Featured Products</h2>
+                <div class="loading" id="loading">
+                    <i class="fas fa-spinner fa-spin"></i> Loading products...
+                </div>
+                <div class="products-grid" id="products-grid">
+                    <!-- Products will be loaded here -->
+                </div>
+                <div class="load-more">
+                    <button id="load-more-btn">Load More Products</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="deals" class="deals">
+            <div class="container">
+                <h2>Today's Best Deals</h2>
+                <div class="deals-grid" id="deals-grid">
+                    <!-- Deals will be loaded here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AI Product Discovery Hub</h3>
+                    <p>Discover the best deals across multiple platforms with AI-powered product analysis and price comparison</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#deals">Deals</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms of Service</a></li>
+                        <li><a href="#cookies">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AI Product Discovery Hub. All rights reserved.</p>
+                <p class="affiliate-notice">This website contains affiliate links. We may earn a commission if you make a purchase through these links at no additional cost to you. All prices and availability are subject to change.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
